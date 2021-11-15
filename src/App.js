@@ -9,11 +9,18 @@ import * as laptimesSelectors from './selectors/laptimes';
 const App = () => {
 
   const vehicles = useSelector(laptimesSelectors.getVehicles);
+  const laptimes = useSelector(laptimesSelectors.getLaptimes);
 
   useRequest(laptimesQueryConfigs.vehiclesRequest());
+  useRequest(laptimesQueryConfigs.laptimesRequest());
 
-  return (
-    <p>Hei</p>
-  )
+  console.log(vehicles,laptimes);
+
+  if(vehicles && laptimes)
+    return (
+      <p>Hei</p>
+    )
+
+  return <p>Loading data</p>;
 }
 export default App;

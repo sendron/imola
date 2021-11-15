@@ -2,18 +2,24 @@
   "name": "touristenfahrten",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pwa.allegro.no/touristenfahrten",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
     "react-scripts": "4.0.3",
+    "redux-query": "^3.4.2",
+    "redux-query-interface-superagent": "^3.4.2",
+    "redux-query-react": "^3.4.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build  && rm -rf touristenfahrten && mv build touristenfahrten",
+    "move": "rm -rf ../pwa-test/pwa/touristenfahrten && mv touristenfahrten ../pwa-test/pwa",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

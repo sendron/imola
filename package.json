@@ -2,7 +2,7 @@
   "name": "touristenfahrten",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pwa.allegro.no/touristenfahrten",
+  "homepage": "https://www.trollsimracing.no/trackday-imola",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -18,8 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build  && rm -rf touristenfahrten && mv build touristenfahrten",
-    "move": "rm -rf ../pwa-test/pwa/touristenfahrten && mv touristenfahrten ../pwa-test/pwa",
+    "build": "react-scripts build  && rm -rf trackday-imola && mv build trackday-imola",
+    "move": "rm -rf ../trollsimracing-github/trackday-imola && mv trackday-imola ../trollsimracing-github/trackday-imola",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

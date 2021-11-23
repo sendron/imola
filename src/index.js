@@ -5,7 +5,7 @@ import { Provider as ReduxQueryProvider } from 'redux-query-react';
 import App from './App';
 import store from './store';
 
-// import './index.css';
+import './index.css';
 
 export const getQueries = state => state.queries;
 

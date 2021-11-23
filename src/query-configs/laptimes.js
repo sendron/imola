@@ -1,6 +1,6 @@
 export const vehiclesRequest = () => {
   return {
-    url: `http://jin.allegro.no/vehicles.json`,
+    url: `https://api.trollsimracing.no:8080/classes`,
     transform: body => ({
       vehicles: body,
     }),
@@ -12,9 +12,10 @@ export const vehiclesRequest = () => {
   };
 }
 
-export const laptimesRequest = () => {
+export const laptimesRequest = (c) => {
   return {
-    url: `http://jin.allegro.no/laptimes_data.json`,
+    force: true,
+    url: `https://api.trollsimracing.no:8080/class/${c}`,
     transform: body => ({
       laptimes: body,
     }),

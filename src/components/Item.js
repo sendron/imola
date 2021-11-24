@@ -13,7 +13,7 @@ const Item = (props) => {
         <div className={c}>
             <div className="pos">{pos}</div>
             <div className="pic" style={{backgroundImage: `url(${lap.steamProfile.avatar.large})`}}></div>
-            <div className="name">{lap.name}</div>
+            <div className="name">{lap.steamProfile.nickname}</div>
             <div className="score vehicle">{lap.vehicle.name}</div>
             <div className="score">{`${date.getMinutes()}:${date.getSeconds()}.${date.getMilliseconds()}`}</div>
         </div>

@@ -33,7 +33,8 @@ const App = () => {
   const renderRest = (laps) => {
     let r = [];
     for (let i = 3; i <= laps.length; i++) {
-      r.push(<Item c="item" lap={sortedLaptimes[i]} pos={i} key={`laptime-${i}`}/>);
+      if(laps[i])
+        r.push(<Item c="item" lap={laps[i]} pos={i} key={`laptime-${laps[i].steamId}-${selectedClass}-${i}`}/>);
     }
     return r;
   }

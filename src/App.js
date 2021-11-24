@@ -5,6 +5,7 @@ import * as laptimesQueryConfigs from './query-configs/laptimes';
 import * as laptimesSelectors from './selectors/laptimes';
 import heading from './TrackdayImola.png';
 import Item from './components/Item';
+import ClassSelector from './components/ClassSelector';
 
 const App = () => {
 
@@ -57,28 +58,13 @@ const App = () => {
                 <h1>TROLL SimRacing presents Trackday@Imola! [BETA]</h1>  
                 <p>
                   GT - real weather. Dont be a dick, show respect!<br/>
-                  <a href="https://discord.com/invite/G5a5MJp5Zn">Discord.gg/G5a5MJp5Zn</a> | Have a great trackday!!
+                  <a href="https://discord.com/invite/G5a5MJp5Zn">Discord.gg/G5a5MJp5Zn</a> | Have a great trackday!!<br/>
+                  <strong>Select your class from the icons below:</strong>
                 </p>
               </div>
             </div>
         </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-3">
-              <select className="custom-select custom-select-lg mt-3" 
-                value={selectedClass}
-                onChange={(e)=>{
-                  if(validClasses.indexOf(e.target.value)!==-1)
-                    setSelectedClass(e.target.value);
-                }}>
-                <option>Select class</option>
-                {validClasses.map((c,i)=>
-                  <option value={c} key={`select-option-${i}`}>{c}</option>
-                )}
-              </select>  
-            </div>
-          </div>
-        </div>
+        <ClassSelector setSelectedClass={setSelectedClass} selectedClass={selectedClass}/>
         {sortedLaptimes.length && 
           <div className="container">
             <div className="row">

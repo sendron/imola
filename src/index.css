@@ -20,8 +20,9 @@ body, html {
   height: 100%;
   width: 100%;
   /* overflow: hidden; */
-  background: #4B4168;
+  /* background: #4B4168; */
   color: #333;
+  background-size: cover;
 }
 
 .center {
@@ -33,6 +34,10 @@ body, html {
   transform: translate(-50%, 0);
   /* z-index: 10; */
   font-family: "Red Hat Display", sans-serif;
+  }
+.container {
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  /* position: relative; */
 }
 
 .top3 {
@@ -166,10 +171,33 @@ body, html {
 }
 .body {
   color: white;
+  text-shadow: 1px 1px #000;
 }
 h1 {
   font-size: 1.5rem;
+  text-shadow: 2px 2px #000;
 }
 a:link,a:visited,a:active {
   color: rgb(255, 230, 0);
+}
+
+.classSelector.active-class {
+  opacity: 1;
+  
+}
+.classSelector {
+  opacity: 0.5;
+}
+.classSelector.active-class img {
+  margin: 10px;
+}
+.classSelector.active-class img {
+  box-shadow: 0 0 40px 20px rgb(255, 230, 0, 0.5);
+  border: 3px solid rgb(255, 230, 0);
+  padding: 3px;
+  margin: 0;
+}
+.imageContainer {
+  display: flex;
+  justify-content: space-between;
 }

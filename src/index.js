@@ -19,3 +19,8 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+const webp = e => document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') === 0;
+
+if(!webp())
+  document.body.classList.add('no-webp');

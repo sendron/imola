@@ -123,7 +123,7 @@ body, html {
   height: 3rem;
   border-radius: 4rem;
   margin-bottom: 2rem;
-  background: #EAA786;
+  background: #333;
   transform-origin: left;
   cursor: pointer;
   transition: transform 200ms ease-in-out;
@@ -204,4 +204,9 @@ a:link,a:visited,a:active {
 .imageContainer {
   display: flex;
   justify-content: space-between;
+}
+.blackbox {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 0;
+  border-radius: 10px;
 }

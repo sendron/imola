@@ -12,10 +12,10 @@ export const vehiclesRequest = () => {
   };
 }
 
-export const laptimesRequest = (c) => {
+export const laptimesRequest = (c,page) => {
   return {
     force: true,
-    url: `https://api.trollsimracing.no:8080/class/${c}`,
+    url: `https://api.trollsimracing.no:8080/class/${c}/${page}`,
     transform: body => ({
       laptimes: body,
     }),

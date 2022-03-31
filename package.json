@@ -1,45 +1,19 @@
 {
-  "name": "imola",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "/",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-infinite-scroll-component": "^6.1.0",
-    "react-redux": "^7.2.6",
-    "react-scripts": "4.0.3",
-    "react-select": "^5.2.1",
-    "redux-query": "^3.4.2",
-    "redux-query-interface-superagent": "^3.4.2",
-    "redux-query-react": "^3.4.2",
-    "web-vitals": "^1.0.1"
-  },
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build  && rm -rf docs && mv build docs",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build  && rm -rf docs && mv dist docs",
+    "serve": "vite preview"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^2.8.6",
+    "vite-plugin-solid": "^2.2.6"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "solid-js": "^1.3.13"
   }
 }

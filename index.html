@@ -20,18 +20,22 @@
 
     <link rel="manifest" href="/manifest.json" />
     <title>Trackday@Imola | TROLL SimRacing</title>
-    
+    <style>
+      body {
+        background: url('/images/ImolaAMS2.webp') no-repeat center center fixed;
+      }
+      body.no-webp {
+        background: url('/images/ImolaAMS2.jpg') no-repeat center center fixed; 
+      }
+    </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <script type="module" crossorigin src="/assets/index.2c4adb99.js"></script>
-    <link rel="modulepreload" href="/assets/vendor.58064af5.js">
-    <link rel="stylesheet" href="/assets/index.86fe51e4.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    
+    <script src="/src/index.jsx" type="module"></script>
   </body>
 </html>
